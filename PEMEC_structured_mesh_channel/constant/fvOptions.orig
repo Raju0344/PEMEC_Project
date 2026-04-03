@@ -1,0 +1,43 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      fvOptions;
+}
+
+oxygenSource
+{
+	type scalarSemiImplicitSource;
+	active yes;
+
+	selectionMode cellZone;
+	cellZone oxygenZone;
+
+	volumeMode absolute;
+
+	injectionRateSuSp
+	{
+	    alpha.water (-1000 0);
+	}
+  
+}
+
+momentumSource
+{
+    	type vectorSemiImplicitSource;
+    	active yes;
+
+   
+        selectionMode cellZone;
+        cellZone oxygenZone;
+	
+	volumeMode absolute;
+
+        injectionRateSuSp
+        {
+            U ((0 1 0) 0);
+        }
+ 
+}

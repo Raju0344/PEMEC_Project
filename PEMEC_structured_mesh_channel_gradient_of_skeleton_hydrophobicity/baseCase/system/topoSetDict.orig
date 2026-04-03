@@ -1,0 +1,79 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2312                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+actions
+(
+    // Create first nucleation spot
+    {
+        name oxygenCells;
+        type cellSet;
+        action new;
+        source boxToCell;
+        sourceInfo
+        {
+            box (0.001 0 0) (0.0015 0.00002 0.0006);
+        }
+    }
+
+    // Add second spot
+    {
+        name oxygenCells;
+        type cellSet;
+        action add;
+        source boxToCell;
+        sourceInfo
+        {
+            box (0.003 0 0) (0.0035 0.00002 0.0006);
+        }
+    }
+
+    // Add third spot
+    {
+        name oxygenCells;
+        type cellSet;
+        action add;
+        source boxToCell;
+        sourceInfo
+        {
+            box (0.005 0 0) (0.0055 0.00002 0.0006);
+        }
+    }
+
+    // Add fourth spot
+    {
+        name oxygenCells;
+        type cellSet;
+        action add;
+        source boxToCell;
+        sourceInfo
+        {
+            box (0.007 0 0) (0.0075 0.00002 0.0006);
+        }
+    }
+
+    // Step 2: convert to cellZone
+    {
+        name oxygenZone;
+        type cellZoneSet;
+        action new;
+        source setToCellZone;
+
+        sourceInfo
+        {
+            set oxygenCells;
+        }
+    }
+);

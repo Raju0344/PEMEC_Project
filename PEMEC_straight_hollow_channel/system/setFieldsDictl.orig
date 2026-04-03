@@ -1,0 +1,68 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2312                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+defaultFieldValues
+(
+    volScalarFieldValue alpha.water 1
+);
+
+regions
+(
+    // First nucleation seed
+    boxToCell
+    {
+        box (0.001 0 0) (0.0015 0.00002 0.0006);
+
+        fieldValues
+        (
+            volScalarFieldValue alpha.water 0
+        );
+    }
+
+    // Second nucleation seed
+    boxToCell
+    {
+        box (0.003 0 0) (0.0035 0.00002 0.0006);
+
+        fieldValues
+        (
+            volScalarFieldValue alpha.water 0
+        );
+    }
+
+    // Third nucleation seed
+    boxToCell
+    {
+        box (0.005 0 0) (0.0055 0.00002 0.0006);
+
+        fieldValues
+        (
+            volScalarFieldValue alpha.water 0
+        );
+    }
+
+    // Fourth nucleation seed
+    boxToCell
+    {
+        box (0.007 0 0) (0.0075 0.00002 0.0006);
+
+        fieldValues
+        (
+            volScalarFieldValue alpha.water 0
+        );
+    }
+);
+// ************************************************************************* //
