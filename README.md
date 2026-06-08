@@ -36,10 +36,11 @@
 
 <br/>
 
-<!-- GRADIENT WETTABILITY — 150-130-110 best case -->
+<!-- GRADIENT WETTABILITY — 150-130-110 best case 
 ### Gradient Wettability · 150°–130°–110° Configuration
 ![Gradient contact angle best case GIF](assets/gifs/gradient_150_130_110.gif)
 *Directed capillary transport — best-performing wettability gradient configuration*
+-->
 
 </div>
 
