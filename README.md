@@ -277,7 +277,7 @@ pem-electrolyzer-vof/
 │   ├── controlDict             # Solver settings, time step, Co max
 │   ├── fvSchemes               # Discretization schemes
 │   ├── fvSolution              # PISO settings, tolerances
-│   └── blockMeshDict           # Mesh generation
+│   └── MeshFileAsAnsysFluentInput           # Mesh generation
 │
 ├── cases/
 │   ├── straight_hollow/        # Baseline straight channel case
@@ -419,21 +419,6 @@ pip install numpy matplotlib pandas scipy
 
 ---
 
-## Citation
-
-If you use this work, please cite:
-
-```bibtex
-@mastersthesis{raju2025pem,
-  author    = {Raju},
-  title     = {CFD Investigation of Two-Phase Flow in PEM Electrolyzer Anode Channels:
-               Effect of Channel Geometry and Surface Wettability on Oxygen Removal},
-  school    = {[Your Institution Name]},
-  year      = {2025},
-  type      = {M.Tech Thesis},
-  note      = {Thesis ID: 24MT0344}
-}
-```
 
 ---
 
