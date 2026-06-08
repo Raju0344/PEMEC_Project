@@ -25,14 +25,14 @@
 
 <!-- STRAIGHT HOLLOW CHANNEL — slug flow development -->
 ### Straight Hollow Channel · Slug Flow Formation
-![Straight hollow channel slug flow GIF](assets/gifs/straight_channel_slug_flow.gif)
+![Straight hollow channel slug flow GIF](assets/gifs/straight_hollow_chnnel.gif)
 *Oxygen volume fraction field — slug flow development at I = 2.0 A cm⁻² (t = 0 → 5 ms)*
 
 <br/>
 
 <!-- STRUCTURED MESH CHANNEL — dispersed bubble transport -->
 ### Structured Mesh Channel · Dispersed Bubble Transport
-![Structured mesh channel dispersed flow GIF](assets/gifs/structured_mesh_dispersed.gif)
+![Structured mesh channel dispersed flow GIF](assets/gifs/structure_mesh_channel.gif)
 *Oxygen volume fraction field — dispersed bubble break-up and upward transport (t = 0 → 5 ms)*
 
 <br/>
