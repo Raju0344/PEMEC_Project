@@ -19,13 +19,12 @@
 
 ## Demo
 
-> ⚠️ *Replace the placeholder below with your simulation GIF or MP4 preview.*
 
 <div align="center">
 
 <!-- STRAIGHT HOLLOW CHANNEL — slug flow development -->
 ### Straight Hollow Channel · Slug Flow Formation
-![Straight hollow channel slug flow GIF](assets/gifs/straight_hollow_chnnel.gif)
+![Straight hollow channel slug flow GIF](assets/gifs/straight_hollow_channel.gif)
 *Oxygen volume fraction field — slug flow development at I = 2.0 A cm⁻² (t = 0 → 5 ms)*
 
 <br/>
